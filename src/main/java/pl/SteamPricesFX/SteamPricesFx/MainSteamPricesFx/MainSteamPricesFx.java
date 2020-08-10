@@ -1,12 +1,6 @@
 package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
-import javafx.stage.PopupWindow;
 import javafx.stage.Stage;
 import pl.SteamPricesFX.SteamPricesFx.Stages.ShowMainStage;
 
@@ -21,7 +15,7 @@ public class MainSteamPricesFx extends Application {
         launch();
     }
     @Override
-    public void init() throws Exception{
+    public void init(){
         System.out.println("Init");
     }
 
@@ -34,7 +28,7 @@ public class MainSteamPricesFx extends Application {
     }
 
     @Override
-    public void stop() throws Exception {
+    public void stop(){
         System.out.println("Stop");
     }
 
