@@ -16,6 +16,7 @@ public class MainSteamPricesFx extends Application {
     @Override
     public void init() throws Exception{
         System.out.println("Init");
+        System.out.println("Test");
     }
 
 
