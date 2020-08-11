@@ -11,7 +11,7 @@
    <items>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="682.0">
          <children>
-            <Button fx:id="addButton" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" text="Add Item" />
+            <Button fx:id="addButton" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#addItem" prefHeight="25.0" text="Add Item" />
             <TextField fx:id="idPicker" layoutX="112.0" layoutY="19.0" prefHeight="25.0" prefWidth="72.0" promptText="Item id" />
             <TextField fx:id="namePicker" layoutX="202.0" layoutY="19.0" prefHeight="25.0" prefWidth="242.0" promptText="Item name" />
             <TextField fx:id="quantityPicker" layoutX="463.0" layoutY="19.0" prefHeight="25.0" prefWidth="108.0" promptText="Item quantity" />
