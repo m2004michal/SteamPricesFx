@@ -1,8 +1,10 @@
 package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
-import pl.SteamPricesFX.SteamPricesFx.Stages.ShowMainStage;
 
 public class MainSteamPricesFx extends Application {
     public MainSteamPricesFx(){
@@ -22,9 +24,14 @@ public class MainSteamPricesFx extends Application {
     @Override
     public void start(Stage stage) throws Exception{
         System.out.println("Start");
-        ShowMainStage showMainStage = new ShowMainStage();
-        showMainStage.showMainStage(stage);
+        Parent root = FXMLLoader.load(getClass().getResource("/Gui.fxml"));
 
+        Scene scene = new Scene(root);
+        stage.setMaxWidth(700);
+        stage.setMinWidth(700);
+        stage.setTitle("STracker");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @Override

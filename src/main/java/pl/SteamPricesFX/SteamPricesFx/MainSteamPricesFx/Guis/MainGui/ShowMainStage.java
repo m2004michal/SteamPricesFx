@@ -1,4 +1,4 @@
-package pl.SteamPricesFX.SteamPricesFx.Stages;
+package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Guis.MainGui;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,14 +10,14 @@ import java.io.IOException;
 public class ShowMainStage {
 
     public void showMainStage(Stage stage) throws IOException {
-        Pane mainPane = FXMLLoader.load(getClass().getResource("/SteamPricesFxml.fxml"));
+        Pane mainPane = FXMLLoader.load(getClass().getResource("/Gui.fxml"));
         Scene scene = new Scene(mainPane);
-        stage.setScene(scene);
-        stage.setMaxHeight(520);
-        stage.setMaxWidth(400);
-        stage.setMinHeight(520);
-        stage.setMinWidth(400);
+
         stage.setTitle("STracker");
+        stage.setScene(scene);
+        stage.setMaxWidth(400);
+
+
         stage.show();
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.5" orientation="VERTICAL" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Guis.MainGui.GuiController.GuiController">
+   <items>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="682.0">
+         <children>
+            <Button fx:id="addButton" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" text="Add Item" />
+            <TextField fx:id="idPicker" layoutX="112.0" layoutY="19.0" prefHeight="25.0" prefWidth="72.0" promptText="Item id" />
+            <TextField fx:id="namePicker" layoutX="202.0" layoutY="19.0" prefHeight="25.0" prefWidth="242.0" promptText="Item name" />
+            <TextField fx:id="quantityPicker" layoutX="463.0" layoutY="19.0" prefHeight="25.0" prefWidth="108.0" promptText="Item quantity" />
+            <Separator layoutX="94.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="94.0" AnchorPane.topAnchor="0.0" />
+            <Separator layoutX="457.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="457.0" AnchorPane.topAnchor="0.0" />
+            <Separator layoutX="190.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="0.0" />
+            <Separator layoutX="577.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="577.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <ListView fx:id="itemList" prefHeight="200.0" prefWidth="200.0" />
+   </items>
+</SplitPane>
