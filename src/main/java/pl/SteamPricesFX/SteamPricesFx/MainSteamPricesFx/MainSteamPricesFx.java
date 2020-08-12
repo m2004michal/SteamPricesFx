@@ -2,6 +2,7 @@ package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.File.FileCreating.FileCreator;
 import pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Guis.MainGui.ShowMainStage;
 
 public class MainSteamPricesFx extends Application {
@@ -23,6 +24,8 @@ public class MainSteamPricesFx extends Application {
     @Override
     public void start(Stage stage) throws Exception{
         System.out.println("Start");
+        FileCreator fileCreator = new FileCreator();
+        fileCreator.createFile();
         ShowMainStage showMainStage = new ShowMainStage();
         showMainStage.showMainStage(stage);
     }

@@ -36,8 +36,8 @@ public class GuiController implements Initializable {
 
     @FXML
     private void addItem(Event e){
-        ItemsWithPricesList.itemsWithPriceList.add(new ItemWithPrice(idPicker.getText(), namePicker.getText(), Integer.parseInt(quantityPicker.getText()), 2.38, 222.38));
-        itemList.setItems(ItemsWithPricesList.itemsWithPriceList);
+        ItemsWithPricesList.itemsWithPriceObservableList.add(new ItemWithPrice(idPicker.getText(), namePicker.getText(), Integer.parseInt(quantityPicker.getText()), 2.38, 222.38));
+        itemList.setItems(ItemsWithPricesList.itemsWithPriceObservableList);
     }
 
 
