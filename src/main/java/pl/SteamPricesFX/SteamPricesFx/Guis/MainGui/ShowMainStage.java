@@ -1,4 +1,4 @@
-package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Guis.MainGui;
+package pl.SteamPricesFX.SteamPricesFx.Guis.MainGui;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

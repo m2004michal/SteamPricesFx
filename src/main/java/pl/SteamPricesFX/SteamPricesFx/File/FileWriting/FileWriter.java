@@ -1,23 +1,23 @@
-package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.File.FileWriting;
+package pl.SteamPricesFX.SteamPricesFx.File.FileWriting;
 
-import javafx.collections.ObservableList;
-import pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Items.Item.ItemWithPrice;
+import pl.SteamPricesFX.SteamPricesFx.Items.Item.Item;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 
 
 public class FileWriter {
 
-    public static void writeFile(ObservableList<ItemWithPrice> items) {
+    public static void writeFile(ArrayList<Item> items) {
         String fileName = "followedItems.txt";
         try (
                 var fs = new FileOutputStream(fileName);
                 var os = new ObjectOutputStream(fs)
         ) {
-            for (ItemWithPrice itemWithPrice : items) {
-                os.writeObject(itemWithPrice);
+            for (Item item : items) {
+                os.writeObject(item);
             }
 
             System.out.println("Succesfuly saved file");
@@ -27,4 +27,5 @@ public class FileWriter {
             e.printStackTrace();
         }
     }
+
 }

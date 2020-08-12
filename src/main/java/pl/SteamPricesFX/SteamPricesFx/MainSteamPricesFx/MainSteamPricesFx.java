@@ -2,8 +2,11 @@ package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.File.FileCreating.FileCreator;
-import pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Guis.MainGui.ShowMainStage;
+import pl.SteamPricesFX.SteamPricesFx.File.FileCreating.FileCreator;
+import pl.SteamPricesFX.SteamPricesFx.File.FileReading.FileReader;
+import pl.SteamPricesFX.SteamPricesFx.File.FileWriting.FileWriter;
+import pl.SteamPricesFX.SteamPricesFx.Guis.MainGui.ShowMainStage;
+import pl.SteamPricesFX.SteamPricesFx.Items.Item.ItemList;
 
 public class MainSteamPricesFx extends Application {
     public MainSteamPricesFx(){
@@ -12,7 +15,8 @@ public class MainSteamPricesFx extends Application {
 
 
     public static void main(String[] args) {
-        System.out.println("Main");
+        FileReader fileReader = new FileReader();
+        System.out.println(fileReader.readFile().toString());
         launch();
     }
 
@@ -32,7 +36,8 @@ public class MainSteamPricesFx extends Application {
 
     @Override
     public void stop(){
-        System.out.println("Stop");
+        FileWriter.writeFile(ItemList.itemsList);
     }
+
 
 }

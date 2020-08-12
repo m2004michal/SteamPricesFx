@@ -1,4 +1,4 @@
-package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Items.Item;
+package pl.SteamPricesFX.SteamPricesFx.Items.Item;
 
 import java.io.Serializable;
 

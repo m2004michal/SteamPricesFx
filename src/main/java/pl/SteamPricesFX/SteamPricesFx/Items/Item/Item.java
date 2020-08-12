@@ -1,8 +1,9 @@
-package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Items.Item;
+package pl.SteamPricesFX.SteamPricesFx.Items.Item;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Item {
+public class Item implements Serializable {
     private String id;
     private String marketName;
     private int quantity;

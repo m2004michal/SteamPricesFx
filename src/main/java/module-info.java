@@ -4,6 +4,6 @@ module SteamPricesFx {
     requires javafx.fxml;
 
     exports pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx to javafx.graphics;
-    exports pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Guis.MainGui.GuiController to javafx.fxml;
-    opens pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Guis.MainGui.GuiController to javafx.fxml;
+    exports pl.SteamPricesFX.SteamPricesFx.Guis.MainGui.GuiController to javafx.fxml;
+    opens pl.SteamPricesFX.SteamPricesFx.Guis.MainGui.GuiController to javafx.fxml;
 }

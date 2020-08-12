@@ -1,12 +1,12 @@
-package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.File.FileCreating;
+package pl.SteamPricesFX.SteamPricesFx.File.FileCreating;
 
 import java.io.File;
 import java.io.IOException;
 
     public class FileCreator {
-        String fileName = "followedItems.txt";
-        File file = new File(fileName);
-        public boolean fileExists = file.exists();
+        private String fileName = "followedItems.txt";
+        private File file = new File(fileName);
+        private boolean fileExists = file.exists();
 
         public void createFile() {
             if (!fileExists) {
