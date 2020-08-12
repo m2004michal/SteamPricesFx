@@ -8,6 +8,7 @@ import pl.SteamPricesFX.SteamPricesFx.File.FileWriting.FileWriter;
 import pl.SteamPricesFX.SteamPricesFx.Guis.MainGui.ShowMainStage;
 import pl.SteamPricesFX.SteamPricesFx.Items.Item.ItemList;
 
+
 public class MainSteamPricesFx extends Application {
     public MainSteamPricesFx(){
         System.out.println("Constructor");
@@ -27,6 +28,7 @@ public class MainSteamPricesFx extends Application {
 
     @Override
     public void start(Stage stage) throws Exception{
+
         System.out.println("Start");
         FileCreator fileCreator = new FileCreator();
         fileCreator.createFile();

@@ -18,17 +18,11 @@ public class ItemWithPrice extends Item implements Serializable {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public double getTotalPrice() {
         return totalPrice;
     }
 
-    public void setTotalPrice(double totalPrice) {
-        this.totalPrice = totalPrice;
-    }
+
 
     @Override
     public String toString() {

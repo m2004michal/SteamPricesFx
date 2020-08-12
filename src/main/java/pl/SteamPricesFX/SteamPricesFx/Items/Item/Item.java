@@ -19,25 +19,16 @@ public class Item implements Serializable {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getMarketName() {
         return marketName;
     }
 
-    public void setMarketName(String marketName) {
-        this.marketName = marketName;
-    }
 
     public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
 
     @Override
     public boolean equals(Object o) {
