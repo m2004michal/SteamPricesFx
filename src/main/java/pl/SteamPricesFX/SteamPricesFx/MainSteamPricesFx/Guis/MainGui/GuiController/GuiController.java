@@ -6,6 +6,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.File.FileReading.FileReader;
+import pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.File.FileWriting.FileWriter;
 import pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Items.Item.ItemWithPrice;
 import pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Items.Item.ItemsWithPricesList;
 
@@ -38,6 +40,8 @@ public class GuiController implements Initializable {
     private void addItem(Event e){
         ItemsWithPricesList.itemsWithPriceObservableList.add(new ItemWithPrice(idPicker.getText(), namePicker.getText(), Integer.parseInt(quantityPicker.getText()), 2.38, 222.38));
         itemList.setItems(ItemsWithPricesList.itemsWithPriceObservableList);
+        FileWriter.writeFile(ItemsWithPricesList.itemsWithPriceObservableList);
+        System.out.println(FileReader.readFile().toString());
     }
 
 

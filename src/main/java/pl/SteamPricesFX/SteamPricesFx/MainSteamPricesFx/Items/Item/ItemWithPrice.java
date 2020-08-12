@@ -1,6 +1,8 @@
 package pl.SteamPricesFX.SteamPricesFx.MainSteamPricesFx.Items.Item;
 
-public class ItemWithPrice extends Item {
+import java.io.Serializable;
+
+public class ItemWithPrice extends Item implements Serializable {
 
     private double price;
     private double totalPrice;

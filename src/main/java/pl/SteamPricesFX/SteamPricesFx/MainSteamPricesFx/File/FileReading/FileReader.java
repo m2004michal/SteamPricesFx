@@ -9,7 +9,7 @@ import java.io.ObjectInputStream;
 
 public class FileReader {
 
-    public ObservableList<ItemWithPrice> readFile() {
+    public static ObservableList<ItemWithPrice> readFile() {
 
         String fileName = "followedItems.txt";
         try (
