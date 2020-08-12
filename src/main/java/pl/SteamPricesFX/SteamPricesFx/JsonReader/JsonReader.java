@@ -44,6 +44,11 @@ public class JsonReader {
     }
     public static String returnPriceString(String id, String marketName){
         JsonReader jsonReader = new JsonReader();
+        try {
+            return jsonReader.readPriceFromName(id, marketName);
+        }catch (RuntimeException e){
+            System.err.println("error");
+        }
         return jsonReader.readPriceFromName(id, marketName);
     }
 

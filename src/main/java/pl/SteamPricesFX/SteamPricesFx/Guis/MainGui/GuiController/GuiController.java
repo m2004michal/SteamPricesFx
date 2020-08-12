@@ -11,6 +11,7 @@ import pl.SteamPricesFX.SteamPricesFx.Items.Item.Item;
 import pl.SteamPricesFX.SteamPricesFx.Items.Item.ItemList;
 import pl.SteamPricesFX.SteamPricesFx.Items.Item.ItemWithPrice;
 import pl.SteamPricesFX.SteamPricesFx.Items.Item.ItemsWithPricesList;
+import pl.SteamPricesFX.SteamPricesFx.Items.Item.UpdateItem.UpdateItem;
 
 
 import java.net.URL;
@@ -41,8 +42,10 @@ public class GuiController implements Initializable {
 
     @FXML
     private void addItem(Event e){
-        ItemList.itemsList.add(new Item(idPicker.getText(), namePicker.getText(), Integer.parseInt(quantityPicker.getText())));
-        updateList(ItemList.itemsList);
+        UpdateItem updateItem = new UpdateItem();
+        Item item = new Item(idPicker.getText(), namePicker.getText(), Integer.parseInt(quantityPicker.getText()));
+        ItemList.itemsList.add(item);
+        updateItem.updateItem(item);
         itemList.setItems(ItemsWithPricesList.itemsWithPriceObservableList);
     }
 
