@@ -10,6 +10,9 @@ import java.nio.charset.StandardCharsets;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import pl.SteamPricesFX.SteamPricesFx.Items.Item.Item;
+import pl.SteamPricesFX.SteamPricesFx.Items.Item.ItemList;
+import pl.SteamPricesFX.SteamPricesFx.Items.Item.ItemsWithPricesList;
 import pl.SteamPricesFX.SteamPricesFx.Url.UrlCreator;
 
 

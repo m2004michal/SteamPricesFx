@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 
 public class ItemsWithPricesList {
-
     public static ObservableList<ItemWithPrice> itemsWithPriceObservableList = FXCollections.observableArrayList();
+
 
     public static ObservableList<ItemWithPrice> updateList (ArrayList<Item> items){
         UpdateItem updateItem = new UpdateItem();
