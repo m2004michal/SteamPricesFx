@@ -19,6 +19,7 @@
             <Separator layoutX="457.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="457.0" AnchorPane.topAnchor="0.0" />
             <Separator layoutX="190.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="0.0" />
             <Separator layoutX="577.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="577.0" AnchorPane.topAnchor="0.0" />
+            <Button layoutX="602.0" layoutY="19.0" mnemonicParsing="false" onAction="#removeItem" text="Button" />
          </children>
       </AnchorPane>
       <ListView fx:id="itemList" prefHeight="200.0" prefWidth="200.0" />

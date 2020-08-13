@@ -14,7 +14,7 @@ public class ItemsWithPricesList {
     public static ObservableList<ItemWithPrice> updateList (ArrayList<Item> items){
         UpdateItem updateItem = new UpdateItem();
         System.out.println(itemsWithPriceObservableList.toString());
-        items.forEach(updateItem::updateItem);
+        items.forEach(item -> updateItem.updateItem(updateItem.addPricesToItem(item)));
         return itemsWithPriceObservableList;
     }
 }

@@ -29,6 +29,7 @@ public class GuiController implements Initializable {
     }
     @FXML
     Button addButton;
+
     @FXML
     TextField idPicker;
     @FXML
@@ -45,8 +46,13 @@ public class GuiController implements Initializable {
         UpdateItem updateItem = new UpdateItem();
         Item item = new Item(idPicker.getText(), namePicker.getText(), Integer.parseInt(quantityPicker.getText()));
         ItemList.itemsList.add(item);
-        updateItem.updateItem(item);
+        updateItem.updateItem(updateItem.addPricesToItem(item));
         itemList.setItems(ItemsWithPricesList.itemsWithPriceObservableList);
+    }
+    @FXML
+    private void removeItem(Event e){
+        Item item = new Item(idPicker.getText(), namePicker.getText(), Integer.parseInt(quantityPicker.getText()));
+
     }
 
 
