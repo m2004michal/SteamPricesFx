@@ -41,7 +41,9 @@ public class JsonReader {
             JSONObject json = readJsonFromUrl(UrlCreator.createURL(id, market_hash_name));
             lowestPrice = json.get("lowest_price").toString();
         } catch (IOException e) {
+
             throw new RuntimeException(e);
+
         }
         return lowestPrice;
     }
@@ -51,6 +53,9 @@ public class JsonReader {
             return jsonReader.readPriceFromName(id, marketName);
         }catch (RuntimeException e){
             System.err.println("error");
+            System.out.println(ItemList.itemsList.toString());
+            ItemList.itemsList.remove(ItemList.itemsList.size() - 1);
+            System.out.println(ItemList.itemsList.toString());
         }
         return jsonReader.readPriceFromName(id, marketName);
     }
