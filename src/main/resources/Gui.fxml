@@ -7,22 +7,22 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<SplitPane dividerPositions="0.5" orientation="VERTICAL" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.SteamPricesFX.SteamPricesFx.Guis.MainGui.GuiController.GuiController">
+<SplitPane dividerPositions="0.5" orientation="VERTICAL" style="-fx-background-color: #767676#767676;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.SteamPricesFX.SteamPricesFx.Guis.MainGui.GuiController.GuiController">
    <items>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="682.0">
          <children>
-            <Button fx:id="addButton" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#addItem" prefHeight="25.0" text="Add Item" />
-            <TextField fx:id="idPicker" layoutX="112.0" layoutY="19.0" prefHeight="25.0" prefWidth="72.0" promptText="Item id" />
-            <TextField fx:id="namePicker" layoutX="202.0" layoutY="19.0" prefHeight="25.0" prefWidth="242.0" promptText="Item name" />
-            <TextField fx:id="quantityPicker" layoutX="463.0" layoutY="19.0" prefHeight="25.0" prefWidth="108.0" promptText="Item quantity" />
-            <Separator layoutX="94.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="94.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="addButton" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#addItem" prefHeight="25.0" style="-fx-background-color: #666666;" text="Add Item" />
+            <TextField fx:id="idPicker" layoutX="112.0" layoutY="19.0" prefHeight="25.0" prefWidth="72.0" promptText="Item id" style="-fx-background-color: #464646;" />
+            <TextField fx:id="namePicker" layoutX="202.0" layoutY="19.0" prefHeight="25.0" prefWidth="242.0" promptText="Item name" style="-fx-background-color: #464646;" />
+            <TextField fx:id="quantityPicker" layoutX="463.0" layoutY="19.0" prefHeight="25.0" prefWidth="108.0" promptText="Item quantity" style="-fx-background-color: #464646;" />
+            <Separator layoutX="92.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" style="-fx-border-color: #767676#767676; -fx-background-color: #767676#767676;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="92.0" AnchorPane.topAnchor="0.0" />
             <Separator layoutX="457.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="457.0" AnchorPane.topAnchor="0.0" />
             <Separator layoutX="190.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="0.0" />
-            <Separator layoutX="577.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="577.0" AnchorPane.topAnchor="0.0" />
-            <Button layoutX="583.0" layoutY="19.0" mnemonicParsing="false" onAction="#removeItem" text="Remove" />
-            <TextField fx:id="indexPicker" layoutX="638.0" layoutY="19.0" prefHeight="25.0" prefWidth="38.0" />
+            <Separator layoutX="574.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="574.0" AnchorPane.topAnchor="0.0" />
+            <Button layoutX="580.0" layoutY="19.0" mnemonicParsing="false" onAction="#removeItem" prefHeight="27.0" prefWidth="68.0" style="-fx-background-color: #666666;" text="Remove" />
+            <TextField fx:id="indexPicker" layoutX="649.0" layoutY="19.0" prefHeight="27.0" prefWidth="32.0" style="-fx-background-color: #464646;" />
          </children>
       </AnchorPane>
-      <ListView fx:id="itemList" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="itemList" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #767676;" />
    </items>
 </SplitPane>
